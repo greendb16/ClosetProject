@@ -3,11 +3,13 @@ public class Shirt {
     private String color;
     private String material;
     private String sleeves;
+    private String name;
 
     public Shirt() {
     }
 
-    public Shirt(String size, String color, String material, String sleeves) {
+    public Shirt(String name, String size, String color, String material, String sleeves) {
+        this.name =name;
         this.size = size;
         this.color = color;
         this.material = material;
@@ -47,9 +49,17 @@ public class Shirt {
         this.sleeves = sleeves;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString(){
-        return  "This Shirt is " + getSize() + " and " + getColor() + ". It is made of " + getMaterial() + " and has " + getSleeves() + "s.";
+        return  getName() + ":\tThis Shirt is " + getSize() + " and " + getColor() + ". It is made of " + getMaterial() + " and has " + getSleeves() + "s.";
     }
 
 }

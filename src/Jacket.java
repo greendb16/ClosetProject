@@ -2,15 +2,17 @@ public class Jacket {
     private String matereal;
     private String size;
     private String color;
+    private String name;
 
     public Jacket (){
 
     }
 
-    public Jacket (String matereal,String size, String color){
+    public Jacket (String matereal,String size, String color, String name){
         this.matereal =matereal;
         this.size = size;
         this.color =color;
+        this.name = name;
     }
 
     public String getMatereal() {
@@ -37,8 +39,16 @@ public class Jacket {
         this.color = color;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString(){
-        return "This Jacket is " + getSize() + " and " + getColor() + ". it is made of " + getMatereal() + ".";
+        return getName() + ":\tThis Jacket is " + getSize() + " and " + getColor() + ". it is made of " + getMatereal() + ".";
     }
 }

@@ -6,12 +6,15 @@ public class Shoes {
     private int size;
     private String color;
     private String type;
+    private String name;
 
 //Constructors
-    public Shoes(String brand, int size, String color, String type) {
+    public Shoes(String brand, int size, String color, String type, String name) {
         this.brand = brand;
         this.size = size;
         this.color = color;
+        this.type = type;
+        this.name = name;
     }
 
 
@@ -55,9 +58,25 @@ public class Shoes {
         this.color = color;
     }
 
+    public ArrayList<Shoes> getShoeList() {
+        return shoeList;
+    }
+
+    public void setShoeList(ArrayList<Shoes> shoeList) {
+        this.shoeList = shoeList;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString(){
-        return "These Shoes are size " + getSize() + " and " + getColor()   + ". They are made by " + getBrand() + ".\n";
+        return getName()+ ":\tThese Shoes are "  +"size " + getSize() + " and " + getColor()   + ". They are made by " + getBrand() + ".\n";
     }
 
 }

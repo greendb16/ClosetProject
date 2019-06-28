@@ -3,6 +3,7 @@ public class Pants {
     private String size;
     private String color;
     private String style;
+    private String name;
 
 
     public  Pants (){
@@ -10,11 +11,12 @@ public class Pants {
     }
 
 
-    public Pants(String material, String size, String color, String style) {
+    public Pants(String material, String size, String color, String style, String name) {
         this.material = material;
         this.size = size;
         this.color = color;
         this.style = style;
+        this.name = name;
     }
 
     public String getMaterial() {
@@ -49,8 +51,16 @@ public class Pants {
         this.style = style;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString(){
-        return "These Pants are " + getSize() + " and " + getColor() + ". They are " + getMaterial() + " " + getStyle() +".";
+        return getName() + ":\tThese Pants are " + getSize() + " and " + getColor() + ". They are " + getMaterial() + " " + getStyle() +".";
     }
 }

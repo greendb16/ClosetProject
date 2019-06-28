@@ -7,6 +7,7 @@ public class Closet {
      private ArrayList<Shoes> shoeList;
 
     public Closet() {
+//        shoeList = new ArrayList<>();
     }
 
     public Closet(Jacket jacket, Shirt shirt, Pants pants, Shoes shoes) {
@@ -57,7 +58,7 @@ public class Closet {
             str += s.toString();
         }
 
-        return "This closet Contains: \n" + jacket.toString() + "\n" + shirt.toString() + "\n" + pants.toString() + "\n"
+        return "\nThis closet Contains: \n" + jacket.toString() + "\n" + shirt.toString() + "\n" + pants.toString() + "\n"
                 + str;
     }
 
