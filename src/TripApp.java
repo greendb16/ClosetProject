@@ -103,6 +103,7 @@ public class TripApp {
             pickJ=false;
             pickP=false;
             pickSh=false;
+            trip.clearShoeList(shoe1);
 
             while (!pickJ) {
                 System.out.println("\nWhich Jacket would you like to add?");
@@ -212,7 +213,7 @@ public class TripApp {
 
             }
             System.out.println(trip.tripToString());
-            System.out.println("Would you like to pack for another trip? (Yes/No");
+            System.out.println("Would you like to pack for another trip? (Yes/No)");
             input = scan.nextLine().toLowerCase();
             if (input.equals("no")) {
                 System.out.println("\nHave a good trip.\nGoodbye.");

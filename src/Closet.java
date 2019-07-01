@@ -47,10 +47,13 @@ public class Closet {
         return shoeList;
     }
 
+    public void clearShoeList(Shoes shoe){
+        shoeList.clear();
+    }
     public void setShoeList(Shoes shoes) {
-        if(shoeList.size()>=2){
-            shoeList.clear();
-        }
+//        if(shoeList.size()>=2){
+//            shoeList.clear();
+//        }
         this.shoeList.add(shoes);
     }
 

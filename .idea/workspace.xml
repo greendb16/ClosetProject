@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5960f9b0-b1db-4c36-8688-3e1c0628f470" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/Closet.java" afterPath="$PROJECT_DIR$/src/Closet.java" />
-      <change beforePath="$PROJECT_DIR$/src/Jacket.java" afterPath="$PROJECT_DIR$/src/Jacket.java" />
       <change beforePath="$PROJECT_DIR$/src/TripApp.java" afterPath="$PROJECT_DIR$/src/TripApp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="Closet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Closet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+            <state relative-caret-position="432">
+              <caret line="55" column="11" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="55" selection-end-column="11" />
               <folding>
                 <element signature="e#525#526#0" expanded="true" />
                 <element signature="e#554#555#0" expanded="true" />
@@ -36,6 +36,8 @@
                 <element signature="e#902#903#0" expanded="true" />
                 <element signature="e#947#948#0" expanded="true" />
                 <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,8 +170,8 @@
       <file leaf-file-name="TripApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TripApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="217" column="63" lean-forward="false" selection-start-line="217" selection-start-column="63" selection-end-line="217" selection-end-column="63" />
+            <state relative-caret-position="183">
+              <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="104" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -276,7 +278,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -410,12 +412,12 @@
       <option name="presentableId" value="Default" />
       <updated>1561734877654</updated>
       <workItem from="1561734887306" duration="16249000" />
-      <workItem from="1561986579569" duration="1374000" />
+      <workItem from="1561986579569" duration="2624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17623000" />
+    <option name="totallyTimeSpent" value="18873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -509,6 +511,8 @@
             <element signature="e#902#903#0" expanded="true" />
             <element signature="e#947#948#0" expanded="true" />
             <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -785,8 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Closet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+        <state relative-caret-position="432">
+          <caret line="55" column="11" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="55" selection-end-column="11" />
           <folding>
             <element signature="e#525#526#0" expanded="true" />
             <element signature="e#554#555#0" expanded="true" />
@@ -802,14 +806,16 @@
             <element signature="e#902#903#0" expanded="true" />
             <element signature="e#947#948#0" expanded="true" />
             <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TripApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="217" column="63" lean-forward="false" selection-start-line="217" selection-start-column="63" selection-end-line="217" selection-end-column="63" />
+        <state relative-caret-position="183">
+          <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="104" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
