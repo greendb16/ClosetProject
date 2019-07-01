@@ -15,6 +15,8 @@ public class TripApp {
     private static boolean pickS;
     private static boolean pickSh;
 
+
+
     public static void main(String[]args){
 
         Shirt shirt1 =new Shirt("Shirt1","large", "Blue", "Cotton", "Long-Sleeve");
@@ -28,11 +30,11 @@ public class TripApp {
 
         Pants pants1 = new Pants("Polyester", "Large", "Red", "Shorts", "Pants1");
         Pants pants2 = new Pants("Jeans", "Large", "Blue", "Pants", "Pants2");
-        Pants pants3 = new Pants("Nylon", "Medium", "White", "Skirt", "Pants3");
+        Pants pants3 = new Pants("Nylon", "Medium", "White", "Leggings", "Pants3");
 
-        Shoes shoe1 = new Shoes("Nike", 10, "Green", "Flip-Flop", "Shoe1");
+        Shoes shoe1 = new Shoes("Flippy-Floppy International", 10, "Green", "Flip-Flop", "Shoe1");
         Shoes shoe2 = new Shoes("New Balance", 9, "White", "Normal", "Shoe2");
-        Shoes shoe3 = new Shoes("Jordans", 13, "Black", "Normal", "Shoe3");
+        Shoes shoe3 = new Shoes("Jordan", 13, "Black", "Normal", "Shoe3");
 
         //ShoeChoice choice = new ShoeChoice();
 
@@ -52,8 +54,7 @@ public class TripApp {
         Closet fall = new Closet(jacket3,shirt3,pants3,shoe3);
 
         while (true) {
-
-
+            pick=false;
             while (!pick) {
                 System.out.println("\nWhich Closet would you like to look at? Winter Fall or Summer?");
                 input = scan.nextLine().toLowerCase();
@@ -98,9 +99,13 @@ public class TripApp {
 
            // Closet trip = new Closet(jacket1, shirt1, pants1, shoe1);
             Closet trip = new Closet();
+            pickS=false;
+            pickJ=false;
+            pickP=false;
+            pickSh=false;
 
             while (!pickJ) {
-                System.out.println("Which Jacket would you like to add?");
+                System.out.println("\nWhich Jacket would you like to add?");
                 input = scan.nextLine().toLowerCase();
 
                 switch (input) {
@@ -126,7 +131,7 @@ public class TripApp {
             }
 
             while (!pickS) {
-                System.out.println("Which Shirt would you like to add?");
+                System.out.println("\nWhich Shirt would you like to add?");
                 input = scan.nextLine().toLowerCase();
 
                 switch (input) {
@@ -151,7 +156,7 @@ public class TripApp {
 
             }
             while (!pickP) {
-                System.out.println("Which Pants would you like to add?");
+                System.out.println("\nWhich Pants would you like to add?");
                 input = scan.nextLine().toLowerCase();
 
                 switch (input) {
@@ -176,13 +181,19 @@ public class TripApp {
 
             }
             while (!pickSh) {
-                System.out.println("Which Shoes would you like to add?");
+                System.out.println("\nWhich Shoes would you like to add?");
                 input = scan.nextLine().toLowerCase();
-
                 switch (input) {
 
                     case "shoe1":
                         trip.setShoeList(shoe1);
+                        System.out.println("\nYou cant just bring flip-flops, lets add an extra pair");
+                        randShoe=random.nextInt(2);
+                        if(randShoe==0){
+                        trip.setShoeList(shoe2);}
+                        else{trip.setShoeList(shoe3);}
+
+
                         pickSh = true;
                         break;
                     case "shoe2":
@@ -200,10 +211,11 @@ public class TripApp {
 
 
             }
-            System.out.println("For your trip you are bringing:\n" + trip.toString());
-            System.out.println("would you like to pack for another trip?");
+            System.out.println(trip.tripToString());
+            System.out.println("Would you like to pack for another trip? (Yes/No");
             input = scan.nextLine().toLowerCase();
             if (input.equals("no")) {
+                System.out.println("\nHave a good trip.\nGoodbye.");
                 break;
             }
         }

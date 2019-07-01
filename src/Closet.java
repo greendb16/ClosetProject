@@ -4,7 +4,7 @@ public class Closet {
      private Jacket jacket;
      private Shirt shirt;
      private Pants pants;
-     private ArrayList<Shoes> shoeList;
+     private ArrayList<Shoes> shoeList = new ArrayList<>();
 
     public Closet() {
 //        shoeList = new ArrayList<>();
@@ -48,6 +48,9 @@ public class Closet {
     }
 
     public void setShoeList(Shoes shoes) {
+        if(shoeList.size()>=2){
+            shoeList.clear();
+        }
         this.shoeList.add(shoes);
     }
 
@@ -62,4 +65,16 @@ public class Closet {
                 + str;
     }
 
+    public String tripToString(){
+        String str = "";
+        for (Shoes s : shoeList){
+            str += s.toString();
+        }
+
+        return "\nFor your trip you are bringing \n" + jacket.toString() + "\n" + shirt.toString() + "\n" + pants.toString() + "\n"
+                + str;
+    }
+
 }
+
+

@@ -49,6 +49,6 @@ public class Jacket {
 
     @Override
     public String toString(){
-        return getName() + ":\tThis Jacket is " + getSize() + " and " + getColor() + ". it is made of " + getMatereal() + ".";
+        return getName() + ":This Jacket is " + getSize() + " and " + getColor() + ". It is made of " + getMatereal() + ".";
     }
 }
